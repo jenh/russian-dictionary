@@ -6,20 +6,9 @@ The data is far from perfect but also not completely rubbish. There might be som
 
 You can use the data quite freely, see the LICENSE file (Creative Commons Attribution Share Alike 4.0).
 
-
 ## About the CSVs
 
 On the website you can download a snapshot of the actual database at https://en.openrussian.org/dictionary. However, those are not as accessible and have a complex format in parts. Thus these CSVs. The snapshots here are automated by hand so if you need a very recent one please open an issue and I will do the export.
-
-## About the SQLite database
-
-The SQLite database includes the following modifications:
-
-- Converted the Open Russian csv files into tables within a SQLite3 database.
-- Added a simple table (ru-en) that contains only the Russian word and its English translation.
-- Filled empty English entries in the ru-en table with machine-translated words (so note that some definitions in ru-en may not be accurate or good).
-
-Many thanks to Michel and Anastasia from OpenRussian.org for making this data freely available! /jh
 
 ### The files
 
@@ -124,3 +113,14 @@ UTF-8 format with fields separated by a tab. First row is the header as usual in
 | presfut_pl2 | Accented second person plural form of the present of future, depending on the word's aspect, e.g. `ска'жете` for `сказать`, might contain several forms separated by a semicolon |
 | presfut_pl3 | Accented third person plural form of the present of future, depending on the word's aspect, e.g. `ска'жут` for `сказать`, might contain several forms separated by a semicolon |
 
+## About the SQLite database
+
+The SQLite database includes the following modifications:
+
+- Converted the Open Russian csv files into tables within a SQLite3 database.
+- Added a simple table (ru-en) that contains only the Russian word and its English translation.
+- Filled empty English entries in the ru-en table with machine-translated words (so note that some definitions in ru-en may not be accurate or good).
+
+Many thanks to Michel and Anastasia from OpenRussian.org for making this data freely available! /jh
+
+See **About the CSVs** for format info.
